@@ -4,6 +4,22 @@ const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
 
+const error = document.querySelector("#modal")
+error.classList = "hidden"
+
+const likes = document.querySelectorAll('.like-glyph')
+document.addEventListener('click', function(e){
+  if (e.target.innerText == EMPTY_HEART) {
+    mimicServerCall()
+    // console.log(e)
+
+  }
+
+
+
+})
+
+
 
 
 
